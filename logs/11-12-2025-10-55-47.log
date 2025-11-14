@@ -1,0 +1,21 @@
+[ 2025-11-12 10:55:48,251 ] 16 root - INFO - \U0001f680 Starting full RFM pipeline execution...
+[ 2025-11-12 10:55:48,251 ] 29 root - INFO - Entered the data ingestion component for customer segmentation
+[ 2025-11-12 10:55:48,252 ] 56 root - INFO - Dataset found at: C:\RFM MODEL\RFM MODEL\data\Online Retail.xlsx (size=960 bytes)
+[ 2025-11-12 10:55:48,252 ] 64 root - WARNING - File C:\RFM MODEL\RFM MODEL\data\Online Retail.xlsx is not a valid xlsx archive — falling back to CSV reader
+[ 2025-11-12 10:55:48,526 ] 74 root - INFO - Dataset loaded successfully with shape: (10, 8)
+[ 2025-11-12 10:55:48,602 ] 82 root - INFO - After cleaning: 10 rows remain.
+[ 2025-11-12 10:55:48,651 ] 91 root - INFO - Raw dataset saved to artifacts\raw_data.csv
+[ 2025-11-12 10:55:48,676 ] 95 root - INFO - Train-test split completed successfully
+[ 2025-11-12 10:55:48,681 ] 99 root - INFO - Train and test datasets saved in artifacts folder
+[ 2025-11-12 10:55:48,681 ] 101 root - INFO - Data ingestion process completed successfully
+[ 2025-11-12 10:55:48,682 ] 21 root - INFO - \u2705 Data ingestion completed successfully.
+[ 2025-11-12 10:55:48,682 ] 69 root - INFO - \U0001f4e5 Loading train and test data...
+[ 2025-11-12 10:55:48,724 ] 72 root - INFO - \u2705 Train and test data loaded successfully.
+[ 2025-11-12 10:55:48,724 ] 31 root - INFO - Starting RFM feature creation...
+[ 2025-11-12 10:55:48,866 ] 57 root - INFO - \u2705 RFM features created successfully. Shape: (2, 4)
+[ 2025-11-12 10:55:48,866 ] 31 root - INFO - Starting RFM feature creation...
+[ 2025-11-12 10:55:48,881 ] 57 root - INFO - \u2705 RFM features created successfully. Shape: (2, 4)
+[ 2025-11-12 10:55:48,889 ] 90 root - INFO - \u2705 Scaler saved at artifacts\preprocessor.pkl
+[ 2025-11-12 10:55:48,889 ] 26 root - INFO - \u2705 Data transformation completed successfully.
+[ 2025-11-12 10:55:48,889 ] 31 root - INFO - Starting model training for RFM clustering
+[ 2025-11-12 10:55:48,910 ] 35 root - INFO - Loaded preprocessor (StandardScaler) for RFM features

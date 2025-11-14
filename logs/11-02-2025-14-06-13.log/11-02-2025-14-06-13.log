@@ -1,0 +1,47 @@
+[ 2025-11-02 14:06:14,409 ] 13 root - INFO - ====== Customer Segmentation Training Pipeline Started ======
+[ 2025-11-02 14:06:14,409 ] 28 root - INFO - Entered the data ingestion component for customer segmentation
+[ 2025-11-02 14:06:14,410 ] 34 root - INFO - Dataset loaded successfully from /Users/parandhamareddybommaka/Desktop/RFM MODEL/data/Online Retail.csv
+[ 2025-11-02 14:06:14,411 ] 39 root - INFO - Removed rows with missing CustomerID and duplicates
+[ 2025-11-02 14:06:14,412 ] 44 root - INFO - Raw data saved at artifacts/raw_data.csv
+[ 2025-11-02 14:06:14,412 ] 49 root - INFO - Train-test split completed successfully
+[ 2025-11-02 14:06:14,413 ] 53 root - INFO - Train and test datasets saved in artifacts folder
+[ 2025-11-02 14:06:14,413 ] 55 root - INFO - Data ingestion process completed successfully
+[ 2025-11-02 14:06:14,413 ] 20 root - INFO - ✅ Data Ingestion Completed. Train: artifacts/train.csv, Test: artifacts/test.csv
+[ 2025-11-02 14:06:14,414 ] 67 root - INFO - Train and test data loaded successfully
+[ 2025-11-02 14:06:14,414 ] 31 root - INFO - Creating RFM features from transaction data
+[ 2025-11-02 14:06:14,417 ] 52 root - INFO - RFM features created successfully. Shape: (4, 4)
+[ 2025-11-02 14:06:14,417 ] 31 root - INFO - Creating RFM features from transaction data
+[ 2025-11-02 14:06:14,418 ] 52 root - INFO - RFM features created successfully. Shape: (2, 4)
+[ 2025-11-02 14:06:14,419 ] 82 root - INFO - StandardScaler fitted on RFM features
+[ 2025-11-02 14:06:14,419 ] 87 root - INFO - Preprocessor (StandardScaler) saved successfully at artifacts/preprocessor.pkl
+[ 2025-11-02 14:06:14,420 ] 30 root - INFO - ✅ Data Transformation Completed. RFM features created and preprocessor saved at: artifacts/preprocessor.pkl
+[ 2025-11-02 14:06:14,420 ] 39 root - INFO - Starting model training for RFM clustering
+[ 2025-11-02 14:06:14,420 ] 43 root - INFO - Loaded preprocessor (StandardScaler) for RFM features
+[ 2025-11-02 14:06:14,420 ] 56 root - INFO - Data has 4 samples. Using 3 clusters.
+[ 2025-11-02 14:06:14,467 ] 81 root - INFO - KMeans => Silhouette: 0.235, Davies: 0.243, Calinski: 6.666
+[ 2025-11-02 14:06:15,503 ] 81 root - INFO - Agglomerative => Silhouette: 0.235, Davies: 0.243, Calinski: 6.666
+[ 2025-11-02 14:06:15,510 ] 81 root - INFO - GMM => Silhouette: 0.235, Davies: 0.243, Calinski: 6.666
+[ 2025-11-02 14:06:15,515 ] 90 root - INFO - Best clustering model selected: KMeans
+[ 2025-11-02 14:06:15,519 ] 100 root - INFO - Best model saved at: artifacts/best_model.pkl
+[ 2025-11-02 14:06:15,519 ] 101 root - INFO - PCA model saved at: artifacts/pca_model.pkl
+[ 2025-11-02 14:06:15,520 ] 109 root - INFO - Model training completed successfully
+[ 2025-11-02 14:06:15,521 ] 42 root - INFO - ✅ Model Training Completed. Best Model: KMeans
+[ 2025-11-02 14:06:15,521 ] 43 root - INFO - Model Scores: {'Silhouette Score': np.float64(0.23507438545202552), 'Davies Bouldin Score': np.float64(0.24338460942820925), 'Calinski Harabasz Score': np.float64(6.665578235108644)}
+[ 2025-11-02 14:06:15,521 ] 48 root - INFO - ====== Training Pipeline Summary ======
+[ 2025-11-02 14:06:15,521 ] 49 root - INFO - Total customers clustered: 4
+[ 2025-11-02 14:06:15,524 ] 50 root - INFO - Cluster distribution:
+Cluster
+0    1
+1    1
+2    2
+Name: count, dtype: int64
+[ 2025-11-02 14:06:15,524 ] 51 root - INFO - 
+[ 2025-11-02 14:06:15,524 ] 52 root - INFO - Files generated in artifacts folder:
+[ 2025-11-02 14:06:15,524 ] 53 root - INFO -   1. raw_data.csv - Raw transaction data
+[ 2025-11-02 14:06:15,524 ] 54 root - INFO -   2. train.csv - Training transaction data
+[ 2025-11-02 14:06:15,524 ] 55 root - INFO -   3. test.csv - Test transaction data
+[ 2025-11-02 14:06:15,524 ] 56 root - INFO -   4. preprocessor.pkl - StandardScaler for RFM features
+[ 2025-11-02 14:06:15,524 ] 57 root - INFO -   5. best_model.pkl - Best clustering model
+[ 2025-11-02 14:06:15,524 ] 58 root - INFO -   6. pca_model.pkl - PCA model for visualization
+[ 2025-11-02 14:06:15,524 ] 59 root - INFO - 
+[ 2025-11-02 14:06:15,524 ] 60 root - INFO - 🎯 Customer Segmentation Training Pipeline executed successfully!

@@ -1,0 +1,31 @@
+[ 2025-11-11 19:07:21,480 ] 16 root - INFO - \U0001f680 Starting full RFM pipeline execution...
+[ 2025-11-11 19:07:21,481 ] 28 root - INFO - Entered the data ingestion component for customer segmentation
+[ 2025-11-11 19:07:21,481 ] 48 root - INFO - Dataset found at: C:\RFM MODEL\RFM MODEL\data\Online Retail.csv
+[ 2025-11-11 19:07:21,491 ] 56 root - INFO - Dataset loaded successfully with shape: (10, 8)
+[ 2025-11-11 19:07:21,497 ] 64 root - INFO - After cleaning: 10 rows remain.
+[ 2025-11-11 19:07:21,504 ] 73 root - INFO - Raw dataset saved to artifacts\raw_data.csv
+[ 2025-11-11 19:07:21,508 ] 77 root - INFO - Train-test split completed successfully
+[ 2025-11-11 19:07:21,512 ] 81 root - INFO - Train and test datasets saved in artifacts folder
+[ 2025-11-11 19:07:21,513 ] 83 root - INFO - Data ingestion process completed successfully
+[ 2025-11-11 19:07:21,513 ] 21 root - INFO - \u2705 Data ingestion completed successfully.
+[ 2025-11-11 19:07:21,513 ] 69 root - INFO - \U0001f4e5 Loading train and test data...
+[ 2025-11-11 19:07:21,523 ] 72 root - INFO - \u2705 Train and test data loaded successfully.
+[ 2025-11-11 19:07:21,523 ] 31 root - INFO - Starting RFM feature creation...
+[ 2025-11-11 19:07:21,540 ] 57 root - INFO - \u2705 RFM features created successfully. Shape: (4, 4)
+[ 2025-11-11 19:07:21,540 ] 31 root - INFO - Starting RFM feature creation...
+[ 2025-11-11 19:07:21,550 ] 57 root - INFO - \u2705 RFM features created successfully. Shape: (2, 4)
+[ 2025-11-11 19:07:21,557 ] 90 root - INFO - \u2705 Scaler saved at artifacts\preprocessor.pkl
+[ 2025-11-11 19:07:21,557 ] 26 root - INFO - \u2705 Data transformation completed successfully.
+[ 2025-11-11 19:07:21,557 ] 31 root - INFO - Starting model training for RFM clustering
+[ 2025-11-11 19:07:21,559 ] 35 root - INFO - Loaded preprocessor (StandardScaler) for RFM features
+[ 2025-11-11 19:07:21,990 ] 63 root - INFO - Optimal number of clusters determined: 2
+[ 2025-11-11 19:07:22,024 ] 87 root - INFO - KMeans => Silhouette: 0.278, Davies: 0.388, Calinski: 3.007
+[ 2025-11-11 19:07:22,098 ] 87 root - INFO - Agglomerative => Silhouette: 0.278, Davies: 0.388, Calinski: 3.007
+[ 2025-11-11 19:07:22,112 ] 87 root - INFO - GMM => Silhouette: 0.278, Davies: 0.388, Calinski: 3.007
+[ 2025-11-11 19:07:22,142 ] 94 root - INFO - Best clustering model selected: KMeans
+[ 2025-11-11 19:07:22,150 ] 104 root - INFO - Best model saved at: artifacts\best_model.pkl
+[ 2025-11-11 19:07:22,150 ] 105 root - INFO - PCA model saved at: artifacts\pca_model.pkl
+[ 2025-11-11 19:07:22,271 ] 165 root - INFO - Final RFM segmentation matrix created successfully.
+[ 2025-11-11 19:07:22,290 ] 168 root - INFO - Model training and segmentation completed successfully
+[ 2025-11-11 19:07:22,291 ] 31 root - INFO - \u2705 Model training completed successfully.
+[ 2025-11-11 19:07:22,316 ] 38 root - INFO - \U0001f3c1 Pipeline execution finished successfully.

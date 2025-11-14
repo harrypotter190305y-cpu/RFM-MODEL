@@ -1,0 +1,20 @@
+[ 2025-11-11 19:05:31,295 ] 16 root - INFO - \U0001f680 Starting full RFM pipeline execution...
+[ 2025-11-11 19:05:31,297 ] 28 root - INFO - Entered the data ingestion component for customer segmentation
+[ 2025-11-11 19:05:31,298 ] 48 root - INFO - Dataset found at: C:\RFM MODEL\RFM MODEL\data\Online Retail.csv
+[ 2025-11-11 19:05:31,395 ] 56 root - INFO - Dataset loaded successfully with shape: (10, 8)
+[ 2025-11-11 19:05:31,447 ] 64 root - INFO - After cleaning: 10 rows remain.
+[ 2025-11-11 19:05:31,489 ] 73 root - INFO - Raw dataset saved to artifacts\raw_data.csv
+[ 2025-11-11 19:05:31,543 ] 77 root - INFO - Train-test split completed successfully
+[ 2025-11-11 19:05:31,553 ] 81 root - INFO - Train and test datasets saved in artifacts folder
+[ 2025-11-11 19:05:31,553 ] 83 root - INFO - Data ingestion process completed successfully
+[ 2025-11-11 19:05:31,554 ] 21 root - INFO - \u2705 Data ingestion completed successfully.
+[ 2025-11-11 19:05:31,554 ] 69 root - INFO - \U0001f4e5 Loading train and test data...
+[ 2025-11-11 19:05:31,564 ] 72 root - INFO - \u2705 Train and test data loaded successfully.
+[ 2025-11-11 19:05:31,564 ] 31 root - INFO - Starting RFM feature creation...
+[ 2025-11-11 19:05:31,664 ] 57 root - INFO - \u2705 RFM features created successfully. Shape: (4, 4)
+[ 2025-11-11 19:05:31,665 ] 31 root - INFO - Starting RFM feature creation...
+[ 2025-11-11 19:05:31,675 ] 57 root - INFO - \u2705 RFM features created successfully. Shape: (2, 4)
+[ 2025-11-11 19:05:31,682 ] 90 root - INFO - \u2705 Scaler saved at artifacts\preprocessor.pkl
+[ 2025-11-11 19:05:31,682 ] 26 root - INFO - \u2705 Data transformation completed successfully.
+[ 2025-11-11 19:05:31,682 ] 31 root - INFO - Starting model training for RFM clustering
+[ 2025-11-11 19:05:31,701 ] 35 root - INFO - Loaded preprocessor (StandardScaler) for RFM features

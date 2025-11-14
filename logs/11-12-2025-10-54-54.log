@@ -1,0 +1,4 @@
+[ 2025-11-12 10:54:57,757 ] 16 root - INFO - \U0001f680 Starting full RFM pipeline execution...
+[ 2025-11-12 10:54:57,759 ] 28 root - INFO - Entered the data ingestion component for customer segmentation
+[ 2025-11-12 10:54:57,760 ] 55 root - INFO - Dataset found at: C:\RFM MODEL\RFM MODEL\data\Online Retail.xlsx (size=960 bytes)
+[ 2025-11-12 10:55:00,489 ] 98 root - ERROR - Error occurred during data ingestion

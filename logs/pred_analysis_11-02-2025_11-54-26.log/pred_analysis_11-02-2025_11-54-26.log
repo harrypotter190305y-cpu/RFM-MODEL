@@ -1,0 +1,7 @@
+[2025-11-02 11:54:26,657] 28 root INFO - Entered the data ingestion component for customer segmentation
+[2025-11-02 11:56:07,485] 33 root INFO - Dataset loaded successfully from Excel file
+[2025-11-02 11:56:07,974] 38 root INFO - Removed rows with missing CustomerID and duplicates
+[2025-11-02 11:56:11,670] 43 root INFO - Raw data saved at artifacts\raw_data.csv
+[2025-11-02 11:56:11,782] 48 root INFO - Train-test split completed successfully
+[2025-11-02 11:56:15,320] 52 root INFO - Train and test datasets saved in artifacts folder
+[2025-11-02 11:56:15,320] 54 root INFO - Data ingestion process completed successfully

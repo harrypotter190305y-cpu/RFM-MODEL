@@ -1,0 +1,8 @@
+[ 2025-11-11 19:13:33,680 ] 28 root - INFO - Entered the data ingestion component for customer segmentation
+[ 2025-11-11 19:13:33,681 ] 48 root - INFO - Dataset found at: C:\RFM MODEL\RFM MODEL\data\Online Retail.csv
+[ 2025-11-11 19:13:33,690 ] 56 root - INFO - Dataset loaded successfully with shape: (10, 8)
+[ 2025-11-11 19:13:33,696 ] 64 root - INFO - After cleaning: 10 rows remain.
+[ 2025-11-11 19:13:33,701 ] 73 root - INFO - Raw dataset saved to artifacts\raw_data.csv
+[ 2025-11-11 19:13:33,705 ] 77 root - INFO - Train-test split completed successfully
+[ 2025-11-11 19:13:33,709 ] 81 root - INFO - Train and test datasets saved in artifacts folder
+[ 2025-11-11 19:13:33,710 ] 83 root - INFO - Data ingestion process completed successfully

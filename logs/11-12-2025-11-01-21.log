@@ -1,0 +1,2 @@
+[ 2025-11-12 11:01:21,424 ] 29 root - INFO - Entered the data ingestion component for customer segmentation
+[ 2025-11-12 11:01:21,424 ] 56 root - INFO - Dataset found at: C:\RFM MODEL\RFM MODEL\data\Online Retail.xlsx (size=23742870 bytes)

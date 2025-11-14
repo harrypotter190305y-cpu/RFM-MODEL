@@ -1,0 +1,3 @@
+[ 2025-11-11 17:26:21,308 ] 16 root - INFO - \U0001f680 Starting full RFM pipeline execution...
+[ 2025-11-11 17:26:21,686 ] 28 root - INFO - Entered the data ingestion component for customer segmentation
+[ 2025-11-11 17:26:21,686 ] 91 root - ERROR - Error occurred during data ingestion

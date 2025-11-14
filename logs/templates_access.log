@@ -1,0 +1,11 @@
+2025-11-14 00:00:58,529 - INFO - Background precompute: artifacts cached
+2025-11-14 00:00:58,544 - INFO - Background precompute: artifacts persisted to disk
+2025-11-14 00:02:30,763 - INFO - Serving template: home.html
+2025-11-14 00:02:33,350 - INFO - Serving dataset preview from artifacts/test.csv
+2025-11-14 00:02:33,391 - INFO - Serving template: dataset.html (preview rows=100)
+2025-11-14 00:02:34,741 - INFO - Serving template: dashboard.html
+2025-11-14 00:02:36,780 - INFO - Request: /generate_segments - start (n_clusters=7)
+2025-11-14 00:04:19,828 - INFO - Background precompute: artifacts cached
+2025-11-14 00:04:19,831 - INFO - Returning cached artifacts for /generate_segments (in-memory)
+2025-11-14 00:04:19,832 - INFO - Cached pie size: 22644, bar size: 22756
+2025-11-14 00:04:19,835 - INFO - Background precompute: artifacts persisted to disk

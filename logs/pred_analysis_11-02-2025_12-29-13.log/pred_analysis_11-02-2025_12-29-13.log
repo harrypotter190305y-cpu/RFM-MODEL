@@ -1,0 +1,7 @@
+[2025-11-02 12:29:13,691] 28 root INFO - Entered the data ingestion component for customer segmentation
+[2025-11-02 12:29:13,720] 34 root INFO - Dataset loaded successfully from c:\RFM MODEL\data\Online Retail.csv
+[2025-11-02 12:29:13,728] 39 root INFO - Removed rows with missing CustomerID and duplicates
+[2025-11-02 12:29:13,742] 44 root INFO - Raw data saved at artifacts\raw_data.csv
+[2025-11-02 12:29:13,745] 49 root INFO - Train-test split completed successfully
+[2025-11-02 12:29:13,751] 53 root INFO - Train and test datasets saved in artifacts folder
+[2025-11-02 12:29:13,751] 55 root INFO - Data ingestion process completed successfully

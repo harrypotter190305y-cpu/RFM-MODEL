@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rfm_model
+Version: 0.0.1
+Author: Shiva
+Author-email: shivasaikuncharapu@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: openpyxl
+Requires-Dist: dill
+Requires-Dist: flask
+Requires-Dist: matplotlib
+Requires-Dist: seaborn

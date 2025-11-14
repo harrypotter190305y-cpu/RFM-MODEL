@@ -1,0 +1,36 @@
+2025-11-13 23:15:58,352 - INFO - Serving template: home.html
+2025-11-13 23:16:07,795 - INFO - Serving template: dashboard.html
+2025-11-13 23:16:10,200 - INFO - Request: /generate_segments - start (n_clusters=7)
+2025-11-13 23:24:31,242 - INFO - Serving template: home.html
+2025-11-13 23:24:33,660 - INFO - Serving dataset preview from artifacts/test.csv
+2025-11-13 23:24:33,760 - INFO - Serving template: dataset.html (preview rows=100)
+2025-11-13 23:24:35,754 - INFO - Serving template: home.html
+2025-11-13 23:25:44,341 - INFO - Serving template: home.html
+2025-11-13 23:25:46,415 - INFO - Serving dataset preview from artifacts/test.csv
+2025-11-13 23:25:46,425 - INFO - Serving template: dataset.html (preview rows=100)
+2025-11-13 23:25:47,737 - INFO - Serving template: home.html
+2025-11-13 23:25:49,579 - INFO - Serving dataset preview from artifacts/test.csv
+2025-11-13 23:25:49,583 - INFO - Serving template: dataset.html (preview rows=100)
+2025-11-13 23:25:51,456 - INFO - Serving template: dashboard.html
+2025-11-13 23:25:53,020 - INFO - Request: /generate_segments - start (n_clusters=7)
+2025-11-13 23:27:49,074 - INFO - Background precompute: artifacts cached
+2025-11-13 23:33:56,531 - INFO - Serving template: home.html
+2025-11-13 23:33:59,516 - INFO - Serving dataset preview from artifacts/test.csv
+2025-11-13 23:33:59,525 - INFO - Serving template: dataset.html (preview rows=100)
+2025-11-13 23:34:01,254 - INFO - Serving template: home.html
+2025-11-13 23:34:02,589 - INFO - Serving template: dashboard.html
+2025-11-13 23:34:04,172 - INFO - Request: /generate_segments - start (n_clusters=7)
+2025-11-13 23:35:55,582 - INFO - No cached artifacts found; computing synchronously
+2025-11-13 23:35:56,791 - INFO - Success: generated 7 segments (sync fallback)
+2025-11-13 23:35:57,016 - INFO - Background precompute: artifacts cached
+2025-11-13 23:37:09,006 - INFO - Serving dataset preview from cache
+2025-11-13 23:37:09,109 - INFO - Serving template: dataset.html (preview rows=100)
+2025-11-13 23:37:10,539 - INFO - Serving template: home.html
+2025-11-13 23:45:45,428 - INFO - Serving template: home.html
+2025-11-13 23:45:47,869 - INFO - Serving template: dashboard.html
+2025-11-13 23:45:49,469 - INFO - Request: /generate_segments - start (n_clusters=7)
+2025-11-13 23:47:24,274 - INFO - No cached artifacts found; computing synchronously
+2025-11-13 23:47:25,493 - INFO - Success: generated 7 segments (sync fallback)
+2025-11-13 23:47:25,644 - INFO - Background precompute: artifacts cached
+2025-11-13 23:59:14,440 - INFO - Background precompute: artifacts cached
+2025-11-13 23:59:14,448 - INFO - Background precompute: artifacts persisted to disk

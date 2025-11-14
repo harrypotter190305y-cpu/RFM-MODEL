@@ -1,0 +1,20 @@
+[ 2025-11-02 14:05:42,991 ] 13 root - INFO - ====== Customer Segmentation Training Pipeline Started ======
+[ 2025-11-02 14:05:42,991 ] 28 root - INFO - Entered the data ingestion component for customer segmentation
+[ 2025-11-02 14:05:42,995 ] 34 root - INFO - Dataset loaded successfully from /Users/parandhamareddybommaka/Desktop/RFM MODEL/data/Online Retail.csv
+[ 2025-11-02 14:05:43,002 ] 39 root - INFO - Removed rows with missing CustomerID and duplicates
+[ 2025-11-02 14:05:43,003 ] 44 root - INFO - Raw data saved at artifacts/raw_data.csv
+[ 2025-11-02 14:05:43,004 ] 49 root - INFO - Train-test split completed successfully
+[ 2025-11-02 14:05:43,005 ] 53 root - INFO - Train and test datasets saved in artifacts folder
+[ 2025-11-02 14:05:43,005 ] 55 root - INFO - Data ingestion process completed successfully
+[ 2025-11-02 14:05:43,005 ] 20 root - INFO - ✅ Data Ingestion Completed. Train: artifacts/train.csv, Test: artifacts/test.csv
+[ 2025-11-02 14:05:43,006 ] 67 root - INFO - Train and test data loaded successfully
+[ 2025-11-02 14:05:43,006 ] 31 root - INFO - Creating RFM features from transaction data
+[ 2025-11-02 14:05:43,015 ] 52 root - INFO - RFM features created successfully. Shape: (4, 4)
+[ 2025-11-02 14:05:43,015 ] 31 root - INFO - Creating RFM features from transaction data
+[ 2025-11-02 14:05:43,017 ] 52 root - INFO - RFM features created successfully. Shape: (2, 4)
+[ 2025-11-02 14:05:43,017 ] 82 root - INFO - StandardScaler fitted on RFM features
+[ 2025-11-02 14:05:43,018 ] 87 root - INFO - Preprocessor (StandardScaler) saved successfully at artifacts/preprocessor.pkl
+[ 2025-11-02 14:05:43,018 ] 30 root - INFO - ✅ Data Transformation Completed. RFM features created and preprocessor saved at: artifacts/preprocessor.pkl
+[ 2025-11-02 14:05:43,018 ] 39 root - INFO - Starting model training for RFM clustering
+[ 2025-11-02 14:05:43,018 ] 43 root - INFO - Loaded preprocessor (StandardScaler) for RFM features
+[ 2025-11-02 14:05:43,137 ] 63 root - ERROR - ❌ Error occurred during the training pipeline execution
