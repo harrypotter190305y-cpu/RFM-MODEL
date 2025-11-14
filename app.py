@@ -45,10 +45,12 @@ def load_and_prepare_data():
         print("✅ Using cached data")
         return cached_df
 
-    # Try multiple paths in order of preference
+    # Try multiple paths in order of preference (including Render-compatible paths)
     possible_paths = [
         'data/Online Retail.xlsx',
         'data/Online Retail.csv',
+        'artifacts/raw_data.csv',  # Fallback to sample data on Render
+        'artifacts/train.csv',     # Alternative fallback
         'notebook/Online Retail.xlsx',
         'OnlineRetail.csv'
     ]
@@ -58,17 +60,20 @@ def load_and_prepare_data():
         if os.path.exists(path):
             try:
                 if path.lower().endswith('.xlsx'):
-                    df = pd.read_excel(path, engine='openpyxl')
+                    df = pd.read_excel(path, engine='openpyxl', nrows=50000)  # Limit rows for speed
                 else:
-                    df = pd.read_csv(path)
+                    df = pd.read_csv(path, nrows=50000)  # Limit rows for speed
                 print(f"✅ Loaded dataset from: {path}")
                 break
             except Exception as ex:
                 print(f"⚠️ Failed to load from {path}: {ex}")
+                logger.warning(f"Failed to load from {path}: {ex}")
                 continue
     
     if df is None:
-        raise FileNotFoundError(f"Dataset not found. Tried: {possible_paths}")
+        err_msg = f"Dataset not found. Tried: {possible_paths}"
+        logger.error(err_msg)
+        raise FileNotFoundError(err_msg)
     
     original_df = df.copy()
 
