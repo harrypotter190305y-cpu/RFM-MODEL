@@ -479,4 +479,6 @@ def generate_segments():
 
 if __name__ == '__main__':
     # Run without debug/reloader for stable behavior while testing
-    app.run(debug=False, port=5000)
+    # Use PORT env var for Render deployment, default to 5000 for local dev
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, port=port, host='0.0.0.0')
